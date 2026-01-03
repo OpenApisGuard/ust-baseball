@@ -9,3 +9,6 @@ document.querySelectorAll('#mobile-menu a').forEach(link => {
     document.getElementById('mobile-menu').classList.add('hidden');
   });
 });
+
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
